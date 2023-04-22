@@ -22,5 +22,5 @@
 Select Email
 from
 (Select Email, count(Email)
-from person
+from Person
 group by Email having count(Email)>1) a
