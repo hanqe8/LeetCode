@@ -28,6 +28,5 @@
 -- Return the result table in any order.
 
 -- Solution
-select FirstName, LastName, City, State
-from Person P left join Address A
-on P.PersonId = A.PersonId
+Select firstName, lastName, City, State
+from Person P left join Address A on P.personId = A.personId
