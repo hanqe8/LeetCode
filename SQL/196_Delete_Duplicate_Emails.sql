@@ -24,9 +24,9 @@
 
 -- Solution
 
-With table1 as
-(Select *,
-row_number() over(partition by email order by id) as rk
-from person)
-Delete from person
-where id in (Select table1.id from table1 where table1.rk>1)
+With table1 AS
+(SELECT *,
+row_number() over(partition BY email ORDER BY id) AS rk
+FROM person)
+DELETE FROM person
+WHERE id IN (SELECT table1.id FROM table1 WHERE table1.rk>1)
