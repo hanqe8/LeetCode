@@ -19,8 +19,8 @@
 -- +---------+
 
 -- Solution
-Select Email from
-(Select email, count(email)
-from Person
-group by email
-having count(email)>1) tempTable
+SELECT Email FROM
+(SELECT email, COUNT(email)
+FROM Person
+GROUP BY email
+HAVING COUNT (email)>1) tempTable
