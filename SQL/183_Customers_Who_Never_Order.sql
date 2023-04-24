@@ -37,7 +37,7 @@
 -- +-----------+
 
 -- Solution
-Select name as Customers
-from Customers
-where id != All(Select c.id from Customers c, Orders o
-                where c.id = o.customerId)
+SELECT name AS Customers
+FROM Customers
+WHERE id != All(SELECT c.id FROM Customers c, Orders o
+                WHERE c.id = o.customerId)
