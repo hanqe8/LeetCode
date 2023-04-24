@@ -22,6 +22,6 @@
 
 -- Solution
 
-Select a.id
-from Weather a, Weather b
-where a.temperature > b.temperature and datediff(a.recordDate, b.recordDate) = 1
+SELECT a.id
+FROM Weather a, Weather b
+WHERE a.temperature > b.temperature AND datediff(a.recordDate, b.recordDate) = 1
