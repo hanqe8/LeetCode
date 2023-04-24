@@ -22,5 +22,5 @@
 -- +----------+
 
 -- Solution
-Select a.name as Employee from Employee a, Employee b
-where a.salary > b.salary and a.managerId = b.id
+SELECT a.name AS Employee FROM Employee a, Employee b
+WHERE a.salary > b.salary AND a.managerId = b.id
